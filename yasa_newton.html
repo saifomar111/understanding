@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="physics-container" dir="rtl">
+    <h2 class="main-title">سێ یاسایێن نیوتنی ب کورتی</h2>
+
+    <div class="law-card">
+        <h3 class="law-num">یاسایا ئێکێ <span class="law-name">جێگیری/بەردەوامی</span></h3>
+        <p class="law-text">
+            تشتێ ڕاوەستیای هەر ب ڕاوەستیای دمینیت، و تشتێ بلڤیت دێ هەر لڤینێ دا بیت ب بەردەوامی، هەتا هێزەکا دەرەکی کاریگەری ل سەر هەبیت و نەچار بکەت شێوازێ خۆ بگۆڕیت.
+        </p>
+        <p class="simple-explain">
+            <span class="bold-tag">نمونە:</span> تەپەک ل سەر ئەردی نالڤیت ئەگەر تە پێنەک لێنەدا، ئەگەر تە پێن لێ دا دێ ب بەردەوامی چیت هەتا هیزا کێشکرنا ئەردی یان هەوای ب راوستینیت
+        </p>
+        <div class="f1"> 
+    <img title="وێنێ ڕونکرنێ" src="images/f1.png" onclick="openImage(this)">
+</div>
+
+<div id="myModal" class="modal" onclick="closeImage()">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="imgFull">
+</div>
+    </div>
+
+    <div class="law-card">
+        <h3 class="law-num">یاسایا دووێ <span class="law-name">(هێز و لەزدان) F=ma</span></h3>
+        <p class="law-text">
+ ئەگەر تە هێزەک دا پاڵ تشتەکێ، دێ ب ئاراستەیێ هیزی لڤیت، ئەو تشتە چەند گرانتر بیت دێ پێدڤی ب هێزەکا مەزنتر بی بۆ لڤاندنا وی تشتی
+        </p>
+        <p class="simple-explain">
+            <span class="bold-tag">نمونە:</span> پاڵدانا ترۆمبێلەکا بچووک گەلەک ب ساناهیترە ژ پاڵدانا بارهەڵگرەکێ مەزن.
+        </p>
+         <div class="f1"> 
+    <img title="وێنێ ڕونکرنێ" src="images/force-diagram.png" onclick="openImage(this)">
+</div>
+    </div>
+
+    <div class="law-card">
+        <h3 class="law-num">یاسایا سێیێ <span class="law-name">(پەرچەکردار)</span></h3>
+        <p class="law-text">
+            بۆ هەر کارەکێ (هێزەکێ)، پەرچەکردارەکا (هێزەکا پێچەوانە) هەیە کو د قەبارە دا وەک یەکە بەلێ د ئاڕاستە دا دژبەری ئێک و دوون.
+        </p>
+        <p class="simple-explain">
+            <span class="bold-tag">ب کورتیا لایەنێ ئاسای:</span> دەمێ تۆپەکێ ل دیوارێ ددەی، دیوار تۆپێ دزۆرینیتە کێش ب ئاڕاستەیێ تە دا.
+        </p>
+    </div>
+</div>
+
+</body>
+<div id="myModal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="imgFull">
+</div>
+<script>
+// دەستنیشانکرنا کادر و وێنەیێ مەزن
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("imgFull");
+
+// ئەڤ کۆدە دێ ل گشت وێنەیێن دناڤ کادران دا گەریت
+document.querySelectorAll('.img-wrapper img, .f1 img').forEach(img => {
+    img.onclick = function() {
+        modal.style.display = "flex";
+        modalImg.src = this.src; // گۆڕینا ناڤنیشانی بۆ وێنەیێ کلیک ل سەر کری
+    }
+});
+
+// گرتنا وێنەی دەمێ کلیک ل سەر پشکا ڕەش یان نیشانا کەتنێ دکەی
+modal.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+</html>
