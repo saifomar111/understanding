@@ -27,8 +27,8 @@ h1 {
 
 .box {
   overflow: hidden;
-  width: 100%;        /* ل سەر مۆبایلێ قەبارێ شاشێ وەرگریت */
-  max-width: 360px;   /* ل سەر کۆمپیوتەری ژ ڤی قەباری مەزنتر لێ ناهێت */
+  width: 90%;        /* ل سەر مۆبایلێ قەبارێ شاشێ وەرگریت */
+  max-width: 340px;   /* ل سەر کۆمپیوتەری ژ ڤی قەباری مەزنتر لێ ناهێت */
   text-align: center;
   border: 10px solid #323031;
   background-color: #0a3f62;
@@ -143,38 +143,10 @@ h1 {
     transition: 0.3s;
 }
 
-/* --- کادرێ لایت بوکس (Modal) یێ گشتی --- */
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 9999; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); 
-    backdrop-filter: blur(5px); 
-    justify-content: center;
-    align-items: center;
-}
 
-.modal-content {
-    max-width: 90%; /* زێدەکرنا پانتایی ل سەر مۆبایلێ داکو وێنە جوانتر دیار بیت */
-    max-height: 85%;
-    border-radius: 15px;
-    border: 4px solid white;
-    animation: zoomIn 0.3s ease; 
-}
 
-.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
+
+
 
 @keyframes zoomIn {
     from { transform: scale(0.8); opacity: 0; }

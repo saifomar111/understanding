@@ -42,37 +42,21 @@
     </div>
 
     <div class="law-card">
-        <h3 class="law-num">یاسایا سێیێ <span class="law-name">(پەرچەکردار)</span></h3>
+        <h3 class="law-num">یاسایا سێیێ <span class="law-name">(بەرسڤدانا هیزێ )</span></h3>
         <p class="law-text">
-            بۆ هەر کارەکێ (هێزەکێ)، پەرچەکردارەکا (هێزەکا پێچەوانە) هەیە کو د قەبارە دا وەک یەکە بەلێ د ئاڕاستە دا دژبەری ئێک و دوون.
+            بۆ هەر کارەکێ (هێزەکێ) هێزەکا پێچەوانە و یەکسان هەیە ، د قەبارەی دا یەکسانە بەلێ د ئاراستەی دا دژی ئیکن (پێچەوانە) ئیک دوونە
         </p>
         <p class="simple-explain">
-            <span class="bold-tag">ب کورتیا لایەنێ ئاسای:</span> دەمێ تۆپەکێ ل دیوارێ ددەی، دیوار تۆپێ دزۆرینیتە کێش ب ئاڕاستەیێ تە دا.
+            <span class="bold-tag">نمونە:</span>دەمێ تەپەکی ل دیواری ددەی، دیوار دێ تەپێ زڤرینیتەڤە ب هەمان کێش (mass ) بەرەڤ ئاراستێ تە
         </p>
+         <div class="f1"> 
+    <img title="وێنێ ڕونکرنێ" src="images/top.jpg" onclick="openImage(this)">
+</div>
     </div>
+    </div>
+    
 </div>
 
 </body>
-<div id="myModal" class="modal">
-    <span class="close-btn">&times;</span>
-    <img class="modal-content" id="imgFull">
-</div>
-<script>
-// دەستنیشانکرنا کادر و وێنەیێ مەزن
-var modal = document.getElementById("myModal");
-var modalImg = document.getElementById("imgFull");
 
-// ئەڤ کۆدە دێ ل گشت وێنەیێن دناڤ کادران دا گەریت
-document.querySelectorAll('.img-wrapper img, .f1 img').forEach(img => {
-    img.onclick = function() {
-        modal.style.display = "flex";
-        modalImg.src = this.src; // گۆڕینا ناڤنیشانی بۆ وێنەیێ کلیک ل سەر کری
-    }
-});
-
-// گرتنا وێنەی دەمێ کلیک ل سەر پشکا ڕەش یان نیشانا کەتنێ دکەی
-modal.onclick = function() {
-    modal.style.display = "none";
-}
-</script>
 </html>
