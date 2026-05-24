@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فیزیا ب کوردی</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="javascript.js">
 </head>
 <body>
+
     <header class="head">
         <h1>فیزیا ب کوردی</h1>
     </header>
 
     <div class="img-container"> 
-        <div class="box">
+        <div class="box"> 
             <a href="yasa_newton.html"> 
                 <div class="img-wrapper">
                     <img src="images/newton.jpg" alt="ایساک نیوتن">
@@ -31,7 +31,26 @@
             <p class="pi">تیورا ڕێژەی یا ئەنیشتاینی</p>
         </div>
     </div>
+
+    <div id="myModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="imgFull">
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("imgFull");
+
+        document.querySelectorAll('.img-wrapper img, .f1 img').forEach(img => {
+            img.onclick = function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            }
+        });
+
+        modal.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
-
 </html>
-
